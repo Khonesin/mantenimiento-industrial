@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Torque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora de Torque</h1>
+        <label for="tipoPerno">Tipo de Perno:</label>
+        <select id="tipoPerno">
+            <option value="iso">Métrico (ISO)</option>
+            <option value="sae">Imperial (SAE)</option>
+        </select>
+
+        <label for="diametro">Diámetro del Perno (mm o pulgadas):</label>
+        <input type="number" id="diametro" placeholder="Por ejemplo: 10">
+
+        <label for="clase">Clase/Grado del Material:</label>
+        <select id="clase">
+            <option value="8.8">8.8</option>
+            <option value="10.9">10.9</option>
+            <option value="12.9">12.9</option>
+            <option value="grado2">Grado 2</option>
+            <option value="grado5">Grado 5</option>
+            <option value="grado8">Grado 8</option>
+        </select>
+
+        <button onclick="calcularTorque()">Calcular Torque</button>
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
